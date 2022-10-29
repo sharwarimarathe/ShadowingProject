@@ -1,0 +1,94 @@
+<!-- Custom CSS -->
+<link rel="stylesheet" href="/Users/sharwari/Desktop/Shadowing/HomeServiceColtSteele/frontend/stylesheets/app.css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+crossorigin="anonymous">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="/Users/sharwari/Desktop/Shadowing/HomeServiceColtSteele/frontend/stylesheets/login.css">
+<body>
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+        <a href="/Users/sharwari/Desktop/Shadowing/HomeServiceColtSteele/frontend/htmls/index.html" class="navbar-brand">HOMESERVICES</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <!-- <ul class="navbar-nav"> -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">HOUSE CLEANING</a>
+                      <a class="dropdown-item" href="#">HANDY MAN</a>
+                      <a class="dropdown-item" href="#">PEST CONTROL</a>
+                    </div>
+                </li>
+            </ul>
+        <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/Users/sharwari/Desktop/Shadowing/HomeServiceColtSteele/frontend/htmls/login.html">Login</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" >Register</a>
+                </li>
+        </ul>
+            <!-- </ul> -->
+        </div>
+    </nav>
+
+<div id="logreg-forms">
+    <form class="form-signin">
+        <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign in</h1>
+        <div class="social-login">
+            <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign in with Facebook</span> </button>
+            <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign in with Google+</span> </button>
+        </div>
+        <p style="text-align:center"> OR  </p>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+        
+        <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Sign in</button>
+        <a href="/Users/sharwari/Desktop/Shadowing/HomeServiceColtSteele/frontend/login.html" id="forgot_pswd">Forgot password?</a>
+        <hr>
+        <!-- <p>Don't have an account!</p>  -->
+        <button class="btn btn-primary btn-block" type="button" id="btn-signup"><i class="fas fa-user-plus"></i> Sign up New Account</button>
+        </form>
+
+        <form action="/reset/password/" class="form-reset">
+            <input type="email" id="resetEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+            <button class="btn btn-primary btn-block" type="submit">Reset Password</button>
+            <a href="/Users/sharwari/Desktop/Shadowing/HomeServiceColtSteele/frontend/login.html" id="cancel_reset"><i class="fas fa-angle-left"></i> Back</a>
+        </form>
+        
+        <form action="/signup/" class="form-signup">
+            <div class="social-login">
+                <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign up with Facebook</span> </button>
+            </div>
+            <div class="social-login">
+                <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign up with Google+</span> </button>
+            </div>
+            
+            <p style="text-align:center">OR</p>
+
+            <input type="text" id="user-name" class="form-control" placeholder="Full name" required="" autofocus="">
+            <input type="email" id="user-email" class="form-control" placeholder="Email address" required autofocus="">
+            <input type="password" id="user-pass" class="form-control" placeholder="Password" required autofocus="">
+            <input type="password" id="user-repeatpass" class="form-control" placeholder="Repeat Password" required autofocus="">
+
+            <button class="btn btn-primary btn-block" type="submit"><i class="fas fa-user-plus"></i> Sign Up</button>
+            <a href="" id="cancel_signup"><i class="fas fa-angle-left"></i> Login</a>
+        </form>
+        <br>
+
+        <!-- Optional JavaScript -->
+    <script src="/Users/sharwari/Desktop/Shadowing/HomeServiceColtSteele/javascripts/login.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</div>
+</body>
